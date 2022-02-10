@@ -1,0 +1,67 @@
+@import '_variables';
+
+.header {
+  background-color: $virtusa-primary;
+  z-index: 4;
+  margin: 0px;
+  top: 0;
+  display: flex;
+  // flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  .logo_v2 {
+    // margin: .75rem;
+    #left {
+      padding: .25rem;
+      color: $primary-color;
+      background-color: $secondary-color;
+      border: 1px solid white;
+      border-top-left-radius: .25rem;
+      border-bottom-left-radius: .25rem;
+      border-right: none;
+      opacity: .85;
+    }
+    #right {
+      color: $virtusa-secondary;
+      background-color: $virtusa-primary;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      padding: .25rem;
+      border: 1px solid white;
+      border-style: dashed;
+      border-left: 1px solid white;
+      border-left-style: dotted;
+    }
+  }
+  .search-bar{
+    max-width: 30vw;
+  }
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    h3{
+      margin: 0 1.5rem 0 1.5rem;
+      color: $secondary-color;
+      a{
+        color: $secondary-color;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .logout-btn{
+      color: $secondary-color;
+        &:hover {
+          color: white;
+        }
+    }
+  }
+  .cart-btn{
+    color: white;
+  }
+
+}

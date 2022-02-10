@@ -1,6 +1,7 @@
-.App {
-  text-align: center;
-}
+@import '_variables';
+@import '_header';
+@import '_footer';
+@import '_home';
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +37,17 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  padding: 0;
+  body {
+    color: $primary-color;
+    margin-bottom: 0;
+    font-family: $font;
+    .app__container {
+      width: auto;
+      min-height: 70vh;
+    }
+  }
+}
+
